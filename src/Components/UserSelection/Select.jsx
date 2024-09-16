@@ -6,7 +6,7 @@ const UserSelection = () => {
   const navigate = useNavigate();
 
   const handleDeveloperClick = () => {
-    navigate('/developer');
+    navigate('/signup');
   };
 
   const handleInvestorClick = () => {

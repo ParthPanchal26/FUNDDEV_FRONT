@@ -32,8 +32,8 @@ const DeveloperForm = () => {
   };
 
   const handleSubmit = () => {
-    console.log('Developer Form Submitted:', formData);
     navigate('/MainPage');
+    console.log('Developer Form Submitted:', formData);
   };
 
   const handleSkip = () => {
