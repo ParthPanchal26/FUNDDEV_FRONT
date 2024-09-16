@@ -1,0 +1,152 @@
+/* General Styles */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f4f9;
+  margin: 0;
+  padding: 0;
+}
+
+.main-page {
+  position: relative;
+  height: 100vh;
+}
+
+/* Navbar Styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background: linear-gradient(45deg, #ff7e5f, #feb47b);
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  color: white;
+}
+
+.hamburger {
+  font-size: 30px;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+
+.hamburger:hover {
+  transform: scale(1.2);
+}
+
+.navbar-right ul {
+  display: flex;
+  gap: 30px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-right ul li {
+  cursor: pointer;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+.navbar-right ul li:hover {
+  color: #f4f4f9;
+}
+
+/* Sidebar Styles */
+.sidebar {
+  position: fixed;
+  left: -250px;
+  top: 0;
+  width: 250px;
+  height: 100%;
+  background-color: #444;
+  color: white;
+  padding-top: 60px;
+  transition: left 0.4s ease;
+  z-index: 2;
+  box-shadow: 2px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.sidebar.open {
+  left: 0;
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  padding: 15px 20px;
+  cursor: pointer;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+.sidebar ul li:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.logout {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+  background-color: #ff7e5f;
+  padding: 10px 0;
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.logout:hover {
+  background-color: #feb47b;
+}
+
+/* Overlay */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+/* Content */
+.content {
+  padding: 50px;
+  text-align: center;
+  font-size: 22px;
+}
+
+.content h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+  background: linear-gradient(45deg, #ff7e5f, #feb47b);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.content p {
+  color: #555;
+  font-size: 18px;
+  line-height: 1.5;
+}
+/* General Reset for Buttons */
+.sidebar ul li button {
+  background: none;
+  color: inherit;
+  border: none;
+  /* padding: 15px 20px; */
+  width: 100%;
+  text-align: left;
+  font-size: inherit;
+  cursor: pointer;
+  font-family: inherit;
+  transition: background-color 0.3s ease;
+}
+
+/* Hover Effect for Buttons (Same as list items) */
+.sidebar ul li button:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
